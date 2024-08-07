@@ -51,6 +51,7 @@ Contains test data with the following columns:
 ## Results
 
 The notebook performs linear regression using gradient descent to fit a line to the data points. It provides visualizations of the data, the fitted line, and calculates the model's performance on test data.
+
 ![image](https://github.com/user-attachments/assets/b6d80f91-fc5c-4bbd-8076-77d4ad308981)
 
 
