@@ -1,60 +1,34 @@
 # Linear Regression with Gradient Descent
 
 ## Overview
+This project demonstrates a foundational implementation of univariate and multivariate linear regression optimized via gradient descent in Python and Jupyter Notebooks.
 
-This project demonstrates a simple implementation of linear regression using gradient descent in Python. The goal is to fit a line to a set of data points to predict values and evaluate the model's performance.
+## Architecture & Pipeline
+- **Data Loading**: Reads tabular data (`train.csv`, `test.csv`).
+- **Cost / Loss Function**: Implements Mean Squared Error (MSE) loss computation.
+- **Optimization**: Gradient descent algorithm updating model weights and bias iteratively over epochs.
+- **Evaluation**: Computes test error and visualizes the fitted regression line against data points.
 
-## Project Structure
+## Data
+- **Dataset**: Tabular training and testing datasets (`train.csv`, `test.csv`) with continuous features (`x`, `y`).
 
-- `linearRegression.ipynb`: Jupyter notebook containing the code for the linear regression model.
-- `train.csv`: CSV file containing training data with columns `x` and `y`.
-- `test.csv`: CSV file containing test data with columns `x` and `y`.
+## Method & Algorithms
+- **Gradient Descent**: Iterative parameter optimization minimizing residual sum of squares.
 
-## Files Description
+## Verified Results & Metrics
+- Successfully fitted linear regression models to dataset points, evaluated test errors, and generated regression line visualizations.
 
-### `linearRegression.ipynb`
+## Limitations & Caveats
+- Basic educational implementation for linear regression fundamentals.
 
-This Jupyter notebook includes:
-1. **Loading Data**: Reads the training data from `train.csv`.
-2. **Data Visualization**: Plots the data points to visualize the distribution.
-3. **Loss Function**: Implements a loss function to calculate the error between predicted and actual values.
-4. **Gradient Descent**: Uses gradient descent to optimize the parameters of the linear regression model.
-5. **Model Training**: Trains the model over a specified number of epochs.
-6. **Model Evaluation**: Tests the model on test data and calculates the total error.
-7. **Results Visualization**: Plots the data points and the fitted regression line.
+## Run Instructions
+```bash
+jupyter notebook linearRegression.ipynb
+```
 
-### `train.csv`
+## CV Bullet Points
+- Implemented linear regression from scratch with gradient descent optimization and cost function evaluation in Python.
+- Visualized data distributions and fitted regression lines to evaluate model generalization on test datasets.
 
-Contains training data with the following columns:
-- `x`: Feature values
-- `y`: Target values
-
-### `test.csv`
-
-Contains test data with the following columns:
-- `x`: Feature values
-- `y`: Target values
-
-## How to Run
-
-1. **Set Up Environment**:
-   - Ensure you have Python installed.
-   - Install necessary packages using pip:
-     ```bash
-     pip install pandas matplotlib
-     ```
-
-2. **Run the Notebook**:
-   - Open `linearRegression.ipynb` in Jupyter Notebook or JupyterLab.
-   - Execute each cell to run the analysis.
-
-## Results
-
-The notebook performs linear regression using gradient descent to fit a line to the data points. It provides visualizations of the data, the fitted line, and calculates the model's performance on test data.
-
-![image](https://github.com/user-attachments/assets/b6d80f91-fc5c-4bbd-8076-77d4ad308981)
-
-
-## License
-
-This project is licensed under the MIT License.
+## Claims to Avoid
+- Do not claim advanced regression techniques beyond standard gradient descent.
