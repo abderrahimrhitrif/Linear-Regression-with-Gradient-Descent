@@ -25,10 +25,3 @@ This project demonstrates a foundational implementation of univariate and multiv
 ```bash
 jupyter notebook linearRegression.ipynb
 ```
-
-## CV Bullet Points
-- Implemented linear regression from scratch with gradient descent optimization and cost function evaluation in Python.
-- Visualized data distributions and fitted regression lines to evaluate model generalization on test datasets.
-
-## Claims to Avoid
-- Do not claim advanced regression techniques beyond standard gradient descent.
